@@ -1,0 +1,308 @@
+body {
+  background-color: #2d2d2d;
+  /* background-image: url(./img/blur_light.png); */
+}
+/*navigation*/
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  /*background-image: url(../img/menu.png);*/
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    137deg,
+    rgba(255, 255, 255, 0.19793855042016806) 0%,
+    rgba(255, 255, 255, 0.3660057773109243) 51%,
+    rgba(255, 255, 255, 0.19793855042016806) 100%
+  );
+  backdrop-filter: blur(12.5px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(14px);
+  width: 100vw;
+  padding: 2.75% 5%;
+}
+.logo {
+  display: inline-block;
+  width: 17.35%;
+}
+.logo img {
+  width: 100%;
+}
+/*nav選項*/
+.menu-wrapper {
+  display: inline-block;
+  width: 78%;
+  vertical-align: middle;
+  padding-left: 30%;
+}
+.menu a:hover {
+  color: #c0c3ff;
+}
+.menu {
+  display: inline-block;
+  width: 19.3%;
+}
+.menu a {
+  vertical-align: middle;
+  font-family: "GenYoGothic TW";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 140%;
+  color: #ffffff;
+  text-decoration: none;
+}
+/*漢堡選單*/
+.burger {
+  display: inline-block;
+  width: 3%;
+  position: relative;
+}
+.burger img {
+  width: 100%;
+}
+.burger span {
+  cursor: pointer;
+}
+.submenu.dropdown {
+  display: block;
+}
+/*css animation*/
+@keyframes slide {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 400%;
+  }
+}
+.submenu {
+  position: fixed;
+  display: none;
+  background-color: #383838;
+  opacity: 90%;
+  backdrop-filter: blur(14px);
+  width: 100vw;
+  left: 0;
+  top: 100%;
+  height: 400%;
+  padding: 0%;
+  animation: slide 0.4s;
+}
+.submenu .dropdown {
+  width: 100%;
+}
+.sub {
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  margin: 2.2% 20%;
+}
+.top {
+  border-bottom: #ffffff solid 1px;
+  margin-top: 6.2%;
+}
+.sub li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+.top li {
+  margin-bottom: 5.2%;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-image: url(../img/menu.png);
+  backdrop-filter: blur(14px);
+  width: 100%;
+}
+/* top-text */
+.top-text {
+  text-align: center;
+  color: #fff;
+  font-family: "GenYoGothic TW";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 16% 0 8% 0;
+  line-height: 165%;
+  letter-spacing: 4.8px;
+}
+/* 中間btn*3 */
+.mid {
+  /* background-image: url(./img/p6_mid_bg.png);
+  background-repeat: no-repeat; */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    137deg,
+    rgba(255, 255, 255, 0.19793855042016806) 0%,
+    rgba(255, 255, 255, 0.40242034313725494) 51%,
+    rgba(255, 255, 255, 0.19793855042016806) 93%
+  );
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  backdrop-filter: blur(12.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  padding: 1.35% 0;
+}
+.mid-wrapper {
+  margin: 0 15%;
+}
+.mid-item {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+.mid-icon,
+.mid-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mid-icon {
+  width: 12%;
+}
+.mid-icon img {
+  width: 100%;
+}
+.mid-button button {
+  height: 70px;
+  width: 207px;
+  background-color: transparent;
+  border: solid;
+  border-color: #c0c3ff;
+  border-radius: 48px;
+  padding: 24px 55px;
+  cursor: pointer;
+  margin: 0 18px;
+  color: #fff;
+  font-family: "GenYoGothic TW";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 22px;
+}
+/* 訂票規定區塊 */
+.main {
+  /* background-image: url(./img/p6_main_bg.png); */
+  width: 90%;
+  margin: 2.61% auto;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    137deg,
+    rgba(255, 255, 255, 0.19793855042016806) 0%,
+    rgba(255, 255, 255, 0.40242034313725494) 51%,
+    rgba(255, 255, 255, 0.19793855042016806) 93%
+  );
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  backdrop-filter: blur(12.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+h1 {
+  font-family: "GenYoGothic TW";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  color: #c0c3ff;
+  padding: 7% 0 2% 11.4%;
+  letter-spacing: 5px;
+}
+.rule p {
+  font-family: "GenYoGothic TW";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 11.4%;
+  line-height: 165%;
+  letter-spacing: 2.3px;
+}
+.check_bubble {
+  background-image: url(../img/check_bubble.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding: 7%; */
+  margin: 7% 10.3% 0 7%;
+}
+.check_bubble p {
+  text-align: center;
+  padding: 4% 0 5% 0;
+  color: #fff;
+  font-size: 20px;
+}
+.checkbox {
+  text-align: center;
+  padding: 0 10% 4% 10%;
+  color: #fff;
+  letter-spacing: 5px;
+}
+/* input[type="checkbox" i]{
+    background-color: transparent;
+} */
+.bottom_btn {
+  padding: 0 25% 8% 25%;
+  display: inline-block;
+}
+.go-back,
+.next-pg {
+  display: inline-block;
+}
+.go-back img {
+  padding: 0 10% 0 0;
+}
+.go-back button {
+  width: 165%;
+  /* height: 78px; */
+  background-color: transparent;
+  border: solid;
+  border-color: #c0c3ff;
+  border-radius: 48px;
+  padding: 15%;
+  cursor: pointer;
+  margin: 0 50%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: 5px;
+}
+.go-back button:hover {
+  background-color: #c0c3ff;
+  color: #2d2d2d;
+}
+.next-pg button {
+  width: 300%;
+  /* height: 92px; */
+  background-color: transparent;
+  border: solid;
+  border-color: #c0c3ff;
+  border-radius: 48px;
+  padding: 30% 0;
+  cursor: pointer;
+  margin: 0 200%;
+  color: #fff;
+  font-family: "GenYoGothic TW";
+  font-weight: 550;
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+.next-pg button:hover {
+  background-color: #7b78f7;
+  color: #2d2d2d;
+  border-color: #7b78f7;
+}
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-family: "GenYoGothic TW";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding: 114px 0;
+}
